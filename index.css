@@ -1,0 +1,236 @@
+.portfolio-page {
+    background: url('background2.jpg') no-repeat center center/cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+nav a {
+    font-size: 1rem;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #47fff9;
+}
+
+main {
+    padding: 120px 20px 40px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photo-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 2px solid #f5f5f5;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+.works-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+.center-intro {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    z-index: 10;
+    font-family: 'Georgia', serif;
+}
+
+.photo-container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 3px solid #f5f5f5;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.center-intro h1 {
+    font-size: 3rem;
+    color: #47ffff;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.center-intro p {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.circle-grid {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 3px solid #f5f5f5;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.work-item:nth-child(1) {
+    transform: rotate(0deg) translate(350px) rotate(0deg);
+}
+
+.work-item:nth-child(2) {
+    transform: rotate(51.4deg) translate(350px) rotate(-51.4deg);
+}
+
+.work-item:nth-child(3) {
+    transform: rotate(102.8deg) translate(350px) rotate(-102.8deg);
+}
+
+.work-item:nth-child(4) {
+    transform: rotate(154.2deg) translate(350px) rotate(-154.2deg);
+}
+
+.work-item:nth-child(5) {
+    transform: rotate(205.6deg) translate(350px) rotate(-205.6deg);
+}
+
+.work-item:nth-child(6) {
+    transform: rotate(257deg) translate(350px) rotate(-257deg);
+}
+
+.work-item:nth-child(7) {
+    transform: rotate(308.4deg) translate(350px) rotate(-308.4deg);
+}
+
+.work-item:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #89e9ff;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #89e9ff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.modal-content {
+    margin-top: 5%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f5f5f5;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIH HSUAN YU'S PORTFOLIO - Works</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="portfolio-page">
+    <header>
+        <h1>CHIH HSUAN YU'S PORTFOLIO</h1>
+        <nav>
+            <a href="enter.html">Home</a>
+            <a href="portfolio.html">Works</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="my-works" class="works-section">
+            <div class="center-intro">
+                <div class="photo-container">
+                    <img src="IMG_1213.jpg" alt="Your Photo">
+                </div>
+                <h1>CHIH HSUAN YU</h1>
+                <p>我是游之萱，銘傳大學商業設計學系大三學生。.</p>
+            </div>
+
+            <h2>My Works</h2>
+        
+            <div class="circle-grid">
+                <div class="work-item">
+                    <img src="work1.jpg" alt="Work 1">
+                </div>
+                <div class="work-item">
+                    <img src="work2.jpg" alt="Work 2">
+                </div>
+                <div class="work-item">
+                    <img src="work3.jpg" alt="Work 3">
+                </div>
+                <div class="work-item">
+                    <img src="work4.jpg" alt="Work 4">
+                </div>
+                <div class="work-item">
+                    <img src="work5.jpg" alt="Work 5">
+                </div>
+                <div class="work-item">
+                    <img src="work6.jpg" alt="Work 6">
+                </div>
+                <div class="work-item">
+                    <img src="work7.jpg" alt="Work 7">
+                </div>
+            </div>
+        </section>
+        
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+        
+        <script>
+            document.querySelectorAll('.work-item img').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    openModal(this.src);
+                });
+            });
+        
+            function openModal(imageSrc) {
+                var modal = document.getElementById("modal");
+                var modalImg = document.getElementById("modal-img");
+                modal.style.display = "block";
+                modalImg.src = imageSrc;
+            }
+        
+            function closeModal() {
+                var modal = document.getElementById("modal");
+                modal.style.display = "none";
+            }
+        </script>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/christinaaa920?igsh=cGIxMW9lZ29sYXQ1&utm_source=qr" target="_blank">@christinaaa920</a>
+        </div>
+        <div class="contact-item">
+            <h3>Email</h3>
+            <a href="christina092000@gmail.com">christina092000@gmail.com</a>
+        </div>
+    </div>
+</section>
